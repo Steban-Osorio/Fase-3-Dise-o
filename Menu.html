@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Display: inline, block, inline-block</title>
+    <style type="text/css">
+    * {
+        padding:0px;
+        margin::0px;
+      }
+      #menus{
+        margin:auto;
+        width:500px;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+
+      ul, ol {
+        list-style:none;
+      }
+
+      .submenu li a {
+        background-color:#1074F3;
+        color:#fff;
+        text-decoration: none;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 10%;
+        padding:10px 15px;
+        display: block;
+
+      }
+      .submenu li a:hover {
+        background-color:#434343;
+      }
+      .submenu > li {
+        float:left;
+      }
+      .submenu li ul {
+        display:none;
+        position:absolute;
+        min-width:140px;
+      }
+      .submenu li:hover > ul {
+        display:block;
+      }
+
+
+
+    </style>
+
+  </head>
+  <body background="fondo.png">
+
+    <div id="menus">
+      <ul class ="submenu">
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Conceptos</a>
+          <ul>
+            <li><a href="">Inline</a></li>
+            <li><a href="">Block</a></li>
+            <li><a href="">Inline-block</a></li>
+          </ul>
+        </li>
+
+        <li><a href="">Recursos</a>
+          <ul>
+            <li><a href="">Video</a></li>
+            <li><a href="">Galeria</a></li>
+          </ul>
+        </li>
+      <li><a href="">Autoevaluacion</a></li>
+
+      <li><a href="">Autor</a></li>
+
+    </ul>
+
+  </div>
+
+
+  <style type="text/css">
+  .caja{
+    align:"left";
+    background-color:"coffe.jpg" ;
+    border: 1px solid black;
+    widht: 100px;
+    height: 500px;
+    padding: 10px;
+    margin:50px 10px;
+  }
+  span{
+    display:inline-block;
+  }
+
+  </style>
+  <p><br>
+  <span ><h1>Bienvenidos.</h1>
+    <p class="caja">
+      En esta pagina encontraremos una explicacion detallada de la propiedad CSS llamada <b>display</b>.<br>
+      Esta propiedad puede  tomar <b>muchos valores diferentes</b>, pero los mas comunes con estos tres:<br><br>
+
+      <b>block:</b> hace que el comportamiento del elemento sea como un bloque.<br>
+      <b>inline:</b> el elemento se renderizará en línea con otros elementos.<br>
+      <b>inline-block:</b> el elemento tendrá un comportamiento mezcla entre los dos anteriores, que ahora voy a describir.<br>
+      <br><img src="will.jpg"></img><br>
+      <img src="logoUNAD.png"></img>
+
+
+    </p>
+  <span>
+
+
+
+  </body>
+</html>
